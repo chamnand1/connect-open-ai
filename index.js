@@ -10,7 +10,7 @@ const openai = new OpenAI({
 });
 
 // Endpoint: POST /matching
-// Body: { "name": "John", "birthdate": "1990-07-21" }
+// Body: { "name": "John", "birthdate": "1990-07-21", gender: "male" }
 app.post('/matching', async (req, res) => {
   const { name, birthdate, gender } = req.body;
 
